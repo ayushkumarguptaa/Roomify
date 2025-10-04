@@ -1,0 +1,82 @@
+<% layout("./listings/boilerplate.ejs") %>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2">
+    <h3>Create New List</h3>
+<form method="post" action="/listings" novalidate class="needs-validation">
+    <div class="mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input 
+    type="text" 
+    placeholder="Hotel Chicago" 
+    name="listing[title]" 
+    class="form-control" required>
+    <div class="valid-feedback">
+        Looks good!
+      </div>
+    <div class="invalid-feedback">
+        Enter Title!
+      </div>
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea name="listing[description]" placeholder="Hotel at cheap price." type="text" class="form-control" required></textarea>
+        <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Enter feedback!
+          </div>
+    </div>
+    <div class="mb-3">
+        <label for="image" class="form-label">Image Link</label>
+        <input name="listing[image]" placeholder="https://unsplash.com/photos/3d-render-of-luxury-hotel-room-with-double-bed-gTA4bkiD2Xw" type="text" class="form-control"></input>
+        
+    </div>
+
+    <div class="mb-3">
+        <label for="image" class="form-label">Uload Image</label>
+        <input name="listing[image]" placeholder="Upload image" type="file" class="form-control"></input>
+        
+    </div>
+
+    <div class="row">
+        <div class="mb-3 col-md-4">
+            <label for="description" class="form-label">Price</label>
+            <input type="number" name="listing[price]" placeholder="1,200" class="form-control" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Enter Price!
+              </div>
+        </div>
+    
+        <div class="mb-3 col-md-8">
+            <label for="Country" class="form-label">Country</label>
+            <input type="text" name="listing[country]" placeholder="Maharashtra" class="form-control" required>
+            <div class="valid-feedback">
+                Looks good!
+              </div>
+              <div class="invalid-feedback">
+                Enter Country!
+              </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label for="price" class="form-label">Mumbai</label>
+        <input type="text" name="listing[location]" placeholder="location" class="form-control" required>
+        <div class="valid-feedback">
+            Looks good!
+          </div>
+          <div class="invalid-feedback">
+            Enter Location!
+          </div>
+    </div>
+    <button class="btn btn-dark">add</button>
+</form>
+</div>
+</div>
+
+</body>
