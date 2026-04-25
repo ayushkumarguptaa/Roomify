@@ -56,7 +56,7 @@ MONGO_URI=your_mongodb_connection_string
 PORT=5000
 Run the application
 -> npm run dev
--> nodemon server/server.js
+-> nodemon app.js
 Open in browser:
 http://localhost:5000
 📸 Screenshots (Optional)
